@@ -11,6 +11,7 @@ COPY package*.json ./
 
 # Installs all node packages
 RUN npm install
+RUN npm install -g typescript
 
 # Copies everything over to Docker environment
 COPY . .
